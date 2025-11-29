@@ -3,6 +3,9 @@ languageCode = "zh-cn"
 title = "BearDahe"
 theme = "PaperMod"
 
+canonifyURLs = true
+relativeURLs = false
+
 [pagination]
 pagerSize = 10
 
