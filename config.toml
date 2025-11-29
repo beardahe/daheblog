@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://beardahe.github.io/daheblog/"
 languageCode = "zh-cn"
 title = "BearDahe"
 theme = "PaperMod"
