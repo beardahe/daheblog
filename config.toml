@@ -5,12 +5,25 @@ theme = "PaperMod"
 
 canonifyURLs = true
 relativeURLs = false
+hasCJKLanguage = true
+enableRobotsTXT = true
+
+summaryLength = 120
+
 
 [pagination]
 pagerSize = 10
 
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [params]
-homeInfoParams = { Title = "BearDahe", Content = " Welcome to Dahe's Blog " }
+homeInfoParams = { Title = "BearDahe", Content = "记录我的随想、技术笔记与生活观察。" }
+description = "BearDahe 的个人博客，记录随想、技术与生活。"
+keywords = ["BearDahe", "博客", "技术", "生活"]
+author = "Dahe"
 
 ShowReadingTime = true
 ShowShareButtons = true
@@ -30,13 +43,33 @@ ShowRssButton = true
 
 ShowRecentPosts = true
 
-assets = { disableHLJS = false }
+[params.assets]
+  disableHLJS = false
 
 [params.article]
   headerBackground = "var(--theme)"
 
-[params.social]
-X = "https://x.com/liuxiqinger"
+[[params.socialIcons]]
+  name = "X"
+  url = "https://x.com/liuxiqinger"
+
+[[params.socialIcons]]
+  name = "RSS"
+  url = "/index.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    style = "monokai"
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
 
 [menu]
   [[menu.main]]
