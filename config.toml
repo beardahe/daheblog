@@ -7,6 +7,7 @@ canonifyURLs = true
 relativeURLs = false
 hasCJKLanguage = true
 enableRobotsTXT = true
+enableGitInfo = true
 
 summaryLength = 120
 
